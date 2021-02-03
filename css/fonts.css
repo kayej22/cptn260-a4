@@ -2,25 +2,30 @@
 
 body {
   font-family:'Cabin', sans-serif;
-  line-height: 1.4;
-  margin: auto;
+  line-height: 1.2;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0 20px;
-  text-align: center;
+  text-align: left;
   font-size: clamp(16px, 5vw, 24px);
-  
+  max-width: 95ch;
 }
 
 
 h1, h2, h3, h4, h5, h6 {
   font-family:'Cabin', sans-serif;
   font-weight: 700; 
-  line-height: 1.3px;
+  line-height: 1.2px;
   text-align: center;
   font-size: 2rem;
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   margin: auto;
   
+}
+
+figcaption {
+  font-size:clamp(10px, 5vw, 16px);
 }
 
 .social__description {
@@ -30,8 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 
 li {
   font-size:clamp(1.5rem, 3vw, 2rem);
-  
-padding: 0 10px;
+  padding: 0 10px;
   list-style: none;
 }
 

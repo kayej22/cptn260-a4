@@ -3,17 +3,18 @@
   .container {
       align-items: flex-start;     
       flex-wrap: nowrap;
+      
       background: white;}
 
 }
-
-
+/* Tablet menu */
 @media all and (min-width: 768px) {
   .container {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
+    
     background: white;}
   }
   
@@ -24,11 +25,18 @@
       line-height: 0;
       border-spacing: 1px;
       text-align: center;
+      
       background: white;
     }
   
   }
   
+.links a:hover{
+  color: rebeccapurple;
+}
+.links{
+  text-align: center;
+}
 
 header {
   display: flex;
@@ -36,35 +44,41 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  
 }
 
+article {
+  border-bottom: 1px solid black; 
+}
 
 ul li a{
+  list-style: none;
+  
   padding: .5rem 1rem;
   width: 12ch;
-  list-style: none;
 }
 
 
 nav li a{
-  text-decoration: none;
-  color:black;
-  font-variant: small-caps;
   list-style: none;
   padding-left: 0;
   width: 100%;
+  
+  text-decoration: none;
+  color:black;
+  font-variant: small-caps;
+  
   border: 1px;
 }
-
 a {
+  color: black;
+  background-color: white;
+  
   outline: black;
   text-decoration: none;
   width: 100%;
   text-align: center;
   line-height: 2;
-  color: black;
-  background-color: white;
+  
   border: .5px;
   border-color: black;
 }
@@ -73,44 +87,90 @@ nav li a:hover {
   color: rebeccapurple;
 
 }
+
+/* display settings for footer */
 footer { 
   background-color: black;
   color: white;
   padding: .1px;
   text-align: center;
+}
+/* display settings for footer */
+
+
+/* display settings for fig & fig caption */
+figure {
+  padding: 3px;
+  margin: auto;
+}
+figcaption {
+  background-color: black;
+  color: white;
+  
+  font-style: italic;
+  padding: 2px;
+  min-width: 100%;
+}
+/* display settings for fig & fig caption */
+
+
+/* display settings for form */
+div.form{
+    display: block;
+    text-align: center;
+    
+    border-bottom: 1px solid black; 
+}
+form{
+    display: inline-block;
+    
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding: 20px 20px;
+}
+/* display settings for form */
+
+
+/* Photo gallery with fig caption */
+.photos {
+  display: block;
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   
 }
-
-
-
-.photos {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  max-height: 400px;
-  padding-top: 10px;
+.gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  
+  margin: 30px;
+  padding: 10px;
+  
+  border-bottom: 1px solid black; 
+  
 }
+/* Photo gallery with fig caption */
 
 
-/* played with design and responsiveness
-but got stuck trying to center column images and giving the entire container responsive/*
-/* Connect with us */
-
+/* Card content block example */
 .connectwithus {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: repeat(3, 100px);
+  
   justify-content: center;
   box-sizing: border-box;
 }
 .connectwithus {
   background-color:white;
+  
   border-radius: 5px;
   padding: 45px;
 }
-.
-/* Connect with us */
 
 .connectwithus {
   box-sizing: border-box;
@@ -118,9 +178,10 @@ but got stuck trying to center column images and giving the entire container res
 
 .social-container {
   display: grid;
-  padding: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1rem;
+  border-bottom: 1px solid black; 
+  padding: 1rem;
 }
 
 .social {
@@ -131,6 +192,8 @@ but got stuck trying to center column images and giving the entire container res
 
 .social_thumbnail {
   flex-grow: 1;
+  margin: 0;
+  
 }
 
 .social {
@@ -142,10 +205,6 @@ but got stuck trying to center column images and giving the entire container res
     justify-content: center;
 }
 
-.social__thumbnail {
-  margin: 0;
-}
-
 .social__description {
     background: grey;
     color: white;
@@ -153,24 +212,30 @@ but got stuck trying to center column images and giving the entire container res
     padding: 1em;
   }
   
+.socialphotos {
+display: block;
 
-
-img {
 max-width: 70%;
+margin-left: auto;
+margin-right: auto;
 }
+
+/* Card content block example */
+
+
+
+/* Hero page */
 
 .pageheader {
   /* change default behaviour of `margin: auto` below */
-  background-image: url('assets/images/heropage.jpg');
+  background-image: url("heropage.jpg");
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
+  text-align: center;
+  margin: auto;
   
   min-height: 100vh;
-
-
-  align-items: center;
-  
   
 }
 
@@ -181,29 +246,28 @@ max-width: 70%;
 
 .button {
   display: block;
+  
   height: 50px;
   width: 300px;
   background:red;
+  color: white;
+  
   border: 2px solid rgba(33, 68, 72, 0.59);
   border-radius: 50px;
-  color: white;
   text-align: center;
   margin-top: 1rem;
 }
 
-
 .tagline {
   margin: 20px;
 }
-
-
 
 .logo {
     max-width: 16%;
     justify-content: center;
     
     }
-    /* Header Elements */
+    /* Hero page */
 
 
 
